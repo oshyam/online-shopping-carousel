@@ -1,0 +1,83 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .carousel-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+  }
+  
+  .carousel-button {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .carousel-button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .carousel-button:disabled {
+    background-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+  }
+
+
+  .carousel-popup-image {
+    max-height: 80vh;
+    max-width: 80vw;
+  }
+
+  .carousel-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-image-popup {
+    /* border-radius: 2px; */
+    position: absolute;
+    top: -111px;
+    right: 0;
+    bottom: 0;
+    left: 476px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    z-index: 999;
+     background-color: #fff;
+    backdrop-filter: blur(5px)
+  }
+
+  .crssbtnClass{
+    background-color: red;
+    position: absolute;
+    right: -302px;
+    top: -56px;
+    color: white;
+}
+  
+  
